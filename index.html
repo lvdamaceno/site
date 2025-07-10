@@ -1,77 +1,149 @@
-<body style="margin:0; font-family:'Inter',sans-serif; background:#F5F5F5; color:#333;">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grupy Belém — Comunidade Python</title>
 
-  <!-- Header -->
-  <header style="display:flex; justify-content:space-between; align-items:center;
-                 padding:1rem 2rem; background:#fff; box-shadow:0 1px 4px rgba(0,0,0,0.1);">
-    <h1 style="font-family:'Montserrat',sans-serif; color:#306998; margin:0;">Grupy</h1>
-    <nav>
-      <a href="#sobre" style="margin:0 1rem; text-decoration:none; color:#333;">Sobre</a>
-      <a href="#recursos" style="margin:0 1rem; text-decoration:none; color:#333;">Recursos</a>
-      <a href="#contato" style="margin:0 1rem; text-decoration:none; color:#333;">Contato</a>
-      <a href="#newsletter"
-         style="margin-left:2rem; background:#FFD43B; padding:0.5rem 1rem; border-radius:4px;
-                text-decoration:none; color:#333; font-weight:600;">
-        Junte-se
-      </a>
+  <!-- Pré-conexão para fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <h1 class="logo">Grupy Belém</h1>
+    <button
+      class="nav-toggle"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="site-navigation"
+    >☰</button>
+    <nav id="site-navigation" class="site-nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="#contato" class="btn btn--accent">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="home" style="text-align:center; padding:4rem 2rem; background:#fff;">
-    <h2 style="font-size:2.5rem; font-family:'Montserrat',sans-serif; color:#306998; margin-bottom:0.5rem;">
-      Grupy Belém
-    </h2>
-    <p style="font-size:1.25rem; margin:0 0 2rem;">Workshops, meetups e network para Pythonistas.</p>
-    <a href="#eventos"
-       style="margin:0 0.5rem; padding:0.75rem 1.5rem; border-radius:4px; text-decoration:none;
-              background:#306998; color:#fff; font-weight:600;">
-      Próximo evento
-    </a>
-    <a href="#newsletter"
-       style="margin:0 0.5rem; padding:0.75rem 1.5rem; border-radius:4px; text-decoration:none;
-              background:transparent; border:2px solid #306998; color:#306998; font-weight:600;">
-      Newsletter
-    </a>
-  </section>
+  <main id="main-content">
+    <!-- Seção HOME redesenhada -->
+    <section id="home" class="hero">
+      <div class="hero-content container">
+        <i class="fab fa-python fa-4x hero-icon"></i>
+        <div class="hero-text">
+          <p>Somos uma comunidade local apaixonada por Python na cidade de Belém do Pará. Se você é de Belém ou da região Norte e curte programar (ou quer aprender), aqui é o seu lugar!</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Recursos / Diferenciais -->
-  <section id="recursos" style="padding:3rem 2rem;">
-    <h3 style="text-align:center; font-family:'Montserrat',sans-serif; color:#306998;">O que oferecemos</h3>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-                gap:1.5rem; max-width:900px; margin:2rem auto;">
-      <div style="background:#fff; padding:1.5rem; border-radius:8px; text-align:center;">
-        <h4>Mentoria</h4>
-        <p>Aprenda com profissionais experientes.</p>
+    <section id="contato" class="grid-section container">
+      <h2>📍 Onde nos encontrar?</h2>
+      <div class="grid">
+        <a href="https://t.me/Grupy_Belem" class="card icon-card" aria-label="Telegram">
+          <i class="fab fa-telegram-plane fa-2x"></i>
+        </a>
+        <a href="https://chat.whatsapp.com/ERHL4P2YfUqHIFlO9uorMr" class="card icon-card" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        <a href="https://discord.gg/bd9h2PKH" class="card icon-card" aria-label="Discord">
+          <i class="fab fa-discord fa-2x"></i>
+        </a>
+        <a href="https://github.com/grupy-belem-pa" class="card icon-card" aria-label="GitHub">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
       </div>
-      <div style="background:#fff; padding:1.5rem; border-radius:8px; text-align:center;">
-        <h4>Projetos</h4>
-        <p>Participe de iniciativas colaborativas.</p>
-      </div>
-      <div style="background:#fff; padding:1.5rem; border-radius:8px; text-align:center;">
-        <h4>Comunicação</h4>
-        <p>Canal ativo no Telegram e Discord.</p>
-      </div>
-      <div style="background:#fff; padding:1.5rem; border-radius:8px; text-align:center;">
-        <h4>Código Aberto</h4>
-        <p>Repositório com exemplos no GitHub.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Depoimentos -->
-  <section id="depoimentos" style="background:#fff; padding:3rem 2rem;">
-    <blockquote style="max-width:600px; margin:0 auto; font-style:italic; color:#555;">
-      “Graças ao Grupy, lancei meu primeiro bot em Python!” – <strong>João Pereira</strong>
-    </blockquote>
-  </section>
+    <!-- Seção “Como contribuir?” full-width -->
+    <section id="recursos" class="grid-section">
+      <div class="container">
+        <h2>🌈 Como contribuir?</h2>
+        <div class="grid">
+          <div class="card">
+            <i class="fas fa-code fa-2x"></i>
+            <p>Criando ou melhorando nossos repositórios e documentações</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-calendar-alt fa-2x"></i>
+            <p>Participando dos nossos eventos, talks e oficinas</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-bug fa-2x"></i>
+            <p>Reportando bugs ou sugerindo melhorias</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-comments fa-2x"></i>
+            <p>Engajando nas discussões e trocando ideias com a galera</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer style="padding:2rem; text-align:center; font-size:0.9rem; color:#777;">
+    <section id="recursos-uteis" class="grid-section container">
+      <h2>📖 Recursos úteis</h2>
+      <div class="grid">
+        <a href="https://www.python.org/" class="card" target="_blank" rel="noopener">
+          <i class="fas fa-book-open fa-2x"></i>
+          <p>Documentação oficial do Python</p>
+        </a>
+        <a href="https://python.org.br/" class="card" target="_blank" rel="noopener">
+          <i class="fas fa-globe fa-2x"></i>
+          <p>Python Brasil</p>
+        </a>
+        <a href="https://docs.python.org/pt-br/3/tutorial/index.html" class="card" target="_blank" rel="noopener">
+          <i class="fas fa-chalkboard-teacher fa-2x"></i>
+          <p>Guia para iniciantes em Python (pt-BR)</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção “Curiosidades” full-width sem hover e textos fixos -->
+    <section id="curiosidades" class="grid-section">
+      <div class="container">
+        <h2>🍍 Curiosidades da nossa terra</h2>
+        <div class="grid">
+          <div class="card">
+            <i class="fas fa-hamburger fa-2x"></i>
+            <p>Açaí aqui é no almoço, não na sobremesa.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-cloud-showers-heavy fa-2x"></i>
+            <p>Chove praticamente todos os dias.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-utensils fa-2x"></i>
+            <p>Sim, a gente ama tucupi, maniçoba, tacacá e açaí.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <blockquote>“Agora é melhor que nunca.” – <cite>Zen do Python</cite></blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <p>
-      <a href="#codigo-conduta" style="color:#306998; text-decoration:none;">Código de Conduta</a> |
-      <a href="https://t.me/grupybelem" style="color:#306998; text-decoration:none;">Telegram</a>
+      <a href="https://t.me/Grupy_Belem">Telegram</a> |
+      <a href="https://chat.whatsapp.com/ERHL4P2YfUqHIFlO9uorMr">WhatsApp</a> |
+      <a href="https://discord.gg/bd9h2PKH">Discord</a> |
+      <a href="https://github.com/grupy-belem-pa">GitHub</a>
     </p>
-    <p>© 2025 Grupy Belém. Todos os direitos reservados.</p>
+    <p>© 2025 Grupy Belém. 🧙‍♀️ Feito com carinho por pessoas incríveis que acreditam no poder da comunidade e do conhecimento livre.</p>
   </footer>
 
+  <script src="script.js" defer></script>
 </body>
+</html>
